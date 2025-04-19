@@ -64,10 +64,16 @@ Run dev mode
 npm run dev
 ```
 
-## Login
+# Screenshots
 
-![image](https://github.com/user-attachments/assets/55144fca-68cf-480c-bcc8-ee554b0ddbc5)
+Here are some screenshots of the system
+
+## Login
+Login is the main page
+
+![image](https://github.com/user-attachments/assets/2ba7ae83-ca5f-4d60-a3c0-7ce8cfe2381a)
 
 ## Tasks
+The main page after the authentication
 
 ![image](https://github.com/user-attachments/assets/235e0ddb-fbc1-41f5-b403-fbe16a807755)
