@@ -66,11 +66,11 @@ npm run dev
 
 # Screenshots
 
-Here are some screenshots of the system
+Here are some screenshots of the system.
 
 ## Login
 
-Login is the first page
+Login is the first page.
 
 ![image](https://github.com/user-attachments/assets/9e5021f0-f27e-4ffd-82df-0ce72432ac3a)
 
