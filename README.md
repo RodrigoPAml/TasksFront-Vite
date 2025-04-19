@@ -69,11 +69,12 @@ npm run dev
 Here are some screenshots of the system
 
 ## Login
-Login is the main page
 
-![image](https://github.com/user-attachments/assets/2ba7ae83-ca5f-4d60-a3c0-7ce8cfe2381a)
+Login is the first page
+
+![image](https://github.com/user-attachments/assets/9e5021f0-f27e-4ffd-82df-0ce72432ac3a)
 
 ## Tasks
 The main page after the authentication
 
-![image](https://github.com/user-attachments/assets/235e0ddb-fbc1-41f5-b403-fbe16a807755)
+![image](https://github.com/user-attachments/assets/2ba7ae83-ca5f-4d60-a3c0-7ce8cfe2381a)
