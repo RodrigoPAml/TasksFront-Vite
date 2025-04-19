@@ -1,0 +1,51 @@
+.container {
+  min-height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-secondary-dark);
+  padding: 1rem;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.backButton {
+  padding: 0.5rem;
+  color: var(--color-primary);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.backButton:not(:disabled) {
+  cursor: pointer;
+}
+
+.title {
+  flex: 1;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1f2937;
+}
+
+.formActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.verificationLink {
+  text-align: center;
+  margin-top: 1rem;
+}

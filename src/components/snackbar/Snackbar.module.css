@@ -1,0 +1,36 @@
+.container {
+  margin-bottom: 1rem;
+  z-index: 10000;
+}
+
+.snackbar {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  color: white;
+  z-index: 10000;
+}
+
+.success {
+  background-color: var(--color-success);
+}
+
+.error {
+  background-color: var(--color-error);
+}
+
+.info {
+  background-color: var(--color-info);
+}
+
+.warning {
+  background-color: var(--color-warning);
+}
+
+.closeButton {
+  margin-left: 1rem;
+  color: var(--color-secondary);
+  font-size: 1.25rem;
+}

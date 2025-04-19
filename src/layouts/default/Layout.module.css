@@ -1,0 +1,12 @@
+.container {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+  overflow: auto;
+  max-height: calc(100vh - 140px);
+  margin-top: 70px;
+}

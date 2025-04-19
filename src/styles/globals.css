@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: rgb(0, 0, 0);
+  --color-primary-light: rgb(35, 35, 35);
+  --color-secondary: rgb(255, 255, 255);
+  --color-secondary-dark: rgb(233, 233, 233);
+  --color-link: #3b82f6;
+  --color-link-hover: #1d4ed8;
+  --color-success:  #10b981;
+  --color-warning:  #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+}
+
+html, :host {
+  line-height: 1.5;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-secondary-dark);
+  border-radius: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

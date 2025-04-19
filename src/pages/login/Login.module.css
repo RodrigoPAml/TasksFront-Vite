@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  min-height: calc(100vh - 140px);
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-secondary-dark);
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.formActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.linkContainer {
+  text-align: center;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  font-size: 0.875rem;
+}

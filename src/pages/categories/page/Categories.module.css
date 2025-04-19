@@ -1,0 +1,72 @@
+.container {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  min-height: calc(100vh - 140px);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.addButton {
+  width: auto;
+  height: auto;
+  border-radius: 50px;
+  transition: transform 0.1s;
+}
+
+.addButton:hover {
+  transform: scale(0.9);
+}
+
+.editButton, .deleteButton {
+  background: transparent;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.editButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: scale(1.1);
+}
+
+.editButton:active {
+  transform: scale(0.95);
+}
+
+.deleteButton {
+  color: #d32f2f;
+}
+
+.deleteButton svg path {
+  fill: #d32f2f;
+}
+
+.deleteButton:hover {
+  background-color: rgba(211, 47, 47, 0.1);
+  transform: scale(1.1);
+}
+
+.deleteButton:active {
+  transform: scale(0.95);
+}
+
+.editButton:disabled, .deleteButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}

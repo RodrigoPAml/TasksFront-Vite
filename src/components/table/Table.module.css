@@ -1,0 +1,148 @@
+.tableWrapper {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+}
+
+.table {
+  min-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: white;
+}
+
+.tableLoading {
+  flex: 1;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.th {
+  background-color: #f4f4f4;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+.resizer {
+  position: absolute;
+  right: 0;
+  top: 0%;
+  height: 100%;
+  width: 20px;
+  cursor: col-resize;
+  user-select: none;
+  touch-action: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.resizer::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.resizer:hover {
+  opacity: 1;
+}
+
+.th:hover .resizer {
+  opacity: 0.5;
+}
+
+.table[data-resizing="true"] .resizer {
+  opacity: 1;
+}
+
+.th:hover {
+  background-color: #e8e8e8;
+}
+
+.td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tr:hover {
+  background-color: #f8f8f8;
+}
+
+.loadingCell {
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+.loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background-color: #f9f9f9;
+  margin-top: auto;
+  min-width: 100%;
+}
+
+.paginationButton {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.paginationButton:hover:not(:disabled) {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+
+.paginationButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.paginationInfo {
+  font-size: 14px;
+  color: #555;
+}

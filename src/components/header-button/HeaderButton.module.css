@@ -1,0 +1,11 @@
+.listItem {
+  position: relative;
+}
+
+.link {
+  font-size: 1.125rem;
+}
+
+.link:hover {
+  color: var(--color-secondary-dark)
+}

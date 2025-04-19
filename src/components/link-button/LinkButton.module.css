@@ -1,0 +1,13 @@
+.button {
+  color: var(--color-link);
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-link-hover);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

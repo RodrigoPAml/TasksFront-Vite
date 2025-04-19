@@ -1,0 +1,150 @@
+.container {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  min-height: calc(100vh - 140px);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.headerButton {
+  width: auto;
+  height: auto;
+  border-radius: 50px;
+  transition: transform 0.1s;
+}
+
+.headerButton:hover {
+  transform: scale(0.9);
+}
+
+.editButton, .deleteButton {
+  background: transparent;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.editButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: scale(1.1);
+}
+
+.editButton:active {
+  transform: scale(0.95);
+}
+
+.deleteButton {
+  color: #d32f2f;
+}
+
+.deleteButton svg path {
+  fill: #d32f2f;
+}
+
+.deleteButton:hover {
+  background-color: rgba(211, 47, 47, 0.1);
+  transform: scale(1.1);
+}
+
+.deleteButton:active {
+  transform: scale(0.95);
+}
+
+.editButton:disabled, .deleteButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.statusLabel, .priorityLabel {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.statusLabel {
+  min-width: 100px;
+}
+
+.priorityLabel {
+  min-width: 80px;
+}
+
+.statusPending {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+  border: 1px solid #f59e0b;
+}
+
+.statusInProgress {
+  background-color: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+  border: 1px solid #3b82f6;
+}
+
+.statusCompleted {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+  border: 1px solid #10b981;
+}
+
+.statusPaused {
+  background-color: rgba(107, 114, 128, 0.2);
+  color: #6b7280;
+  border: 1px solid #6b7280;
+}
+
+.statusCancelled {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+  border: 1px solid #ef4444;
+}
+
+.priorityNone {
+  background-color: rgba(107, 114, 128, 0.2);
+  color: #6b7280;
+  border: 1px solid #6b7280;
+}
+
+.priorityLow {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+  border: 1px solid #10b981;
+}
+
+.priorityMedium {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+  border: 1px solid #f59e0b;
+}
+
+.priorityHigh {
+  background-color: rgba(251, 146, 60, 0.2);
+  color: #fb923c;
+  border: 1px solid #fb923c;
+}
+
+.priorityUrgent {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+  border: 1px solid #ef4444;
+}
