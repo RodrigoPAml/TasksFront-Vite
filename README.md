@@ -52,6 +52,18 @@ The project uses Vite for fast development and optimized production builds, with
 - **ESLint:** For code quality
 - **Environment Variables:** For configuration across different environments
 
+## Running
+
+Install dependencies
+```
+npm install
+```
+
+Run dev mode
+```
+npm run dev
+```
+
 ## Login
 
 ![image](https://github.com/user-attachments/assets/55144fca-68cf-480c-bcc8-ee554b0ddbc5)
