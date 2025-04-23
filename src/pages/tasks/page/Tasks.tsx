@@ -140,7 +140,7 @@ const Tasks: React.FC = () => {
             }
           }
         ]}
-        className="h-[calc(90vh-220px)] mt-4"
+        className="h-[calc(90vh-250px)] mt-4"
         data={items}
         loading={loading}
         refresh={refresh}
