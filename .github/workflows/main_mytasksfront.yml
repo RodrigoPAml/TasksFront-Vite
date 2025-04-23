@@ -25,6 +25,9 @@ jobs:
           npm install
           npm run build
 
+      - name: Copy web.config to dist folder
+        run: cp web.config dist/
+
       - name: Zip build artifact
         run: cd dist && zip -r ../release.zip . && cd ..
 
