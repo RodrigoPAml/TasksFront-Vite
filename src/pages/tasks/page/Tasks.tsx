@@ -82,7 +82,7 @@ const Tasks: React.FC = () => {
           {
             key: 'priority',
             header: 'Priority',
-            sortable: false,
+            sortable: true,
             minSize: 150,
             size: 120,
             cell: (value) => {

@@ -5,4 +5,6 @@ export enum TaskOrderByEnum {
   NameDesc,
   DueDateAsc,
   DueDateDesc,
+  PriorityAsc,
+  PriorityDesc,
 }
