@@ -28,7 +28,7 @@ api.interceptors.response.use(
 
       return Promise.resolve({
         success: false,
-        errorMessage: 'Login expired',
+        errorMessage: 'Login expired, redirecting to login',
         code: error?.status ?? -1,
         data: null,
       });

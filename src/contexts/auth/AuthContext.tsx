@@ -33,11 +33,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   });
 
   useEffect(() => {
-    if (token) {
+    if (token && !isAuthenticated) {
       localStorage.setItem('auth_token', token);
       verifyTokenPersisted(40);
     } else {
       localStorage.removeItem('auth_token');
+      setIsAuthenticated(false);
     }
   }, [token]);
 

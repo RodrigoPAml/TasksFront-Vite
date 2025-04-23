@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import { useAuth } from '../../contexts/auth/AuthContext';
 import { useServices } from '../../contexts/services/ServicesContext';
 import { useSnackbar } from '../../contexts/snackbar/SnackbarContext';
 import Button from '../../components/button/Button';
@@ -20,9 +21,14 @@ const ForgotPassword: React.FC = () => {
   const { authService } = useServices();
   const { showSnackbar } = useSnackbar();
   const navigate = useNavigate();
+  const { logout } = useAuth();
   const { register, handleSubmit, formState: { errors }, trigger } = useForm<FormReset>();
   const [loading, setLoading] = useState(false);
   const [verificationSent, setVerificationSent] = useState(false);
+
+  useEffect(() => {
+    logout()
+  }, []);
 
   const onSubmitEmail = async (data: FormReset) => {
     setLoading(true);
