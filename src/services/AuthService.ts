@@ -26,7 +26,7 @@ export const AuthService = {
   },
 
   createAccount: async (data: CreateAccountData): Promise<EmptyResponse> => {
-    return await api.post('/authentication/createAccount', data);
+    return await api.post('/authentication/signUp', data);
   },
 
   resetPassword: async (data: ResetPasswordData): Promise<EmptyResponse> => {
