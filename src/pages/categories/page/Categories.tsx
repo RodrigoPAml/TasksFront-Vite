@@ -84,7 +84,7 @@ const Categories: React.FC = () => {
             }
           }
         ]}
-        className="h-[calc(90vh-200px)] mt-4"
+        className="h-[calc(90vh-250px)] mt-4"
         data={items}
         loading={loading}
         withPagination
